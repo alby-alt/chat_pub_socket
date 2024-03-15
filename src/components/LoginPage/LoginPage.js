@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import event from  '../../events'
-import { Grid, Header, Icon, Form, Message } from 'semantic-ui-react';
+import { Grid, Header, Icon, Form, Message, Image } from 'semantic-ui-react';
 
 export class LoginPage extends Component {
   state = {
@@ -39,10 +39,11 @@ export class LoginPage extends Component {
         verticalAlign='middle'
       >
         <Grid.Column computer={ 6 } tablet={ 8 } mobile={ 14 } >
-          <Header as='h2' icon textAlign='center' color='blue'>
-            <Icon name='discussions' />
-            Simple Chats.
+          <Header as='h2' icon>
+           {/*<Icon name='discussions' /> */}
+           <Image src='https://files.bugtech.online/api/v1/files/download/65f3bd6e8ca8235f9ce8d5a6' wrapped style={{height: 150, width: 170, top: 30}}/>
           </Header>
+          <p style={{fontSize: 24, fontWeight: 'bold', color: '#089bcc'}}> Chat Support </p>
           <Form size='small' onSubmit={this.handleSubmit}>
             <Form.Input 
               name='nickname'
