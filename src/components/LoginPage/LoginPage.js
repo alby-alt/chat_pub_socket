@@ -30,7 +30,7 @@ export class LoginPage extends Component {
     this.isvalid( this.state ) ? socket.emit( event.IS_USER, nickname, this.setUser ) :
     this.setState({ error : 'Please input your nickname'})
   }
-
+// SOCK IT
   render() {
     return (
       <Grid
